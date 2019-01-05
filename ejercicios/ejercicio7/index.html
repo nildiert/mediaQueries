@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="../../bootstrap-4.2.1-dist/css/bootstrap.css">
+    <title>Document</title>
+    <style>
+        *{
+            box-sizing: border-box;
+        }
+        body{
+            margin: 0;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        .header{
+            text-align: center;
+            padding:32px;
+        }
+        .fila{
+            display: flex;
+            flex-wrap: wrap;
+            padding: 0 4px;
+        }
+
+        /* Creación de columnas */
+
+        .column{
+            flex: 25%;
+            max-width: 25%;
+            padding: 0 4px;
+        }
+        .column img{
+            margin-top: 8px;
+            vertical-align: middle;
+        }
+
+        /* Usamos los media queries para hacer la pagina responsive */
+        @media screen and (max-width:800px){
+            .column{
+                flex: 50%;
+                max-width: 50%;
+            }
+        }
+        @media screen and (max-width:600px){
+            .column{
+                flex: 100%;
+                max-width: 100%;
+            }
+        }
+    
+    
+    </style>
+</head>
+<body>
+    <div class="jumbotron">
+        <h1 class="display-3">Ejemplo 7</h1>
+        <p>Galería de imagenes flexible</p> 
+    </div>
+    <div class="container ">
+
+        <div class="fila">
+            <div class="column">
+                <img src="../../imagenes/wedding.jpg" alt="" style="width: 100%">
+                <img src="../../imagenes/rocks.jpg" alt="" style="width: 100%">
+                <img src="../../imagenes/falls2.jpg" alt="" style="width: 100%">
+                <img src="../../imagenes/paris.jpg" alt="" style="width: 100%">
+                <img src="../../imagenes/nature.jpg" alt="" style="width: 100%">
+                <img src="../../imagenes/mist.jpg" alt="" style="width: 100%">
+                <img src="../../imagenes/paris.jpg" alt="" style="width: 100%">
+            </div>
+            <div class="column">
+                <img src="../../imagenes/underwater.jpg" alt="" style="width: 100%">
+                <img src="../../imagenes/ocean.jpg" alt="" style="width: 100%">
+                <img src="../../imagenes/wedding.jpg" alt="" style="width: 100%">
+                <img src="../../imagenes/mountainskies.jpg" alt="" style="width: 100%">
+                <img src="../../imagenes/rocks.jpg" alt="" style="width: 100%">
+                <img src="../../imagenes/underwater.jpg" alt="" style="width: 100%">
+            </div>
+            <div class="column">
+                <img src="../../imagenes/wedding.jpg" alt="" style="width: 100%">
+                <img src="../../imagenes/rocks.jpg" alt="" style="width: 100%">
+                <img src="../../imagenes/falls2.jpg" alt="" style="width: 100%">
+                <img src="../../imagenes/paris.jpg" alt="" style="width: 100%">
+                <img src="../../imagenes/nature.jpg" alt="" style="width: 100%">
+                <img src="../../imagenes/mist.jpg" alt="" style="width: 100%">
+                <img src="../../imagenes/paris.jpg" alt="" style="width: 100%">
+            </div>
+            <div class="column">
+                <img src="../../imagenes/underwater.jpg" alt="" style="width: 100%">
+                <img src="../../imagenes/ocean.jpg" alt="" style="width: 100%">
+                <img src="../../imagenes/wedding.jpg" alt="" style="width: 100%">
+                <img src="../../imagenes/mountainskies.jpg" alt="" style="width: 100%">
+                <img src="../../imagenes/rocks.jpg" alt="" style="width: 100%">
+                <img src="../../imagenes/underwater.jpg" alt="" style="width: 100%">
+            </div>
+
+        </div>
+
+        
+        <div class="mt-2">
+            <a href="../../" class="btn btn-info">
+                Volver al inicio
+            </a >
+        </div>
+
+    </div>
+    
+</body>

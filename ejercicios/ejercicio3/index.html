@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="../../bootstrap-4.2.1-dist/css/bootstrap.css">
+    <title>Document</title>
+    <style>
+
+        /* Los bordes hacen parte de la caja  */
+        * {
+            box-sizing: border-box;
+        }
+
+        /* Creamos estilos iguales para todas las columnas */
+        .column{
+            float: left;
+            width: 25%;
+            padding: 20px;
+        }
+        
+        .fila:after{
+            content: '';
+            display: table;
+            clear: both;
+        }
+
+        /* Cambio de propiedades para las c olumnas en pantallas de 992px */
+
+        @media screen and (max-width: 992px){
+            .column{
+                width: 50%;
+            }
+        }
+
+        @media screen and (max-width: 600px){
+            .column{
+                width: 100%;
+            }
+        }
+
+
+
+    </style>
+</head>
+<body>
+    <div class="jumbotron">
+        <h1 class="display-3">Ejemplo 3</h1>
+        <p>Media queries para columnas</p> 
+    </div>
+    <div class="container ">
+        <div class="fila">
+            <div class="column" style="background-color: #aaa">
+                <h2>Columna 1</h2>
+                <p>Texto ...</p>
+            </div>
+            <div class="column" style="background-color: #bbb">
+                <h2>Columna 2</h2>
+                <p>Texto ...</p>
+            </div>
+            <div class="column" style="background-color: #ccc">
+                <h2>Columna 3</h2>
+                <p>Texto ...</p>
+            </div>
+            <div class="column" style="background-color: #ddd">
+                <h2>Columna 4</h2>
+                <p>Texto ...</p>
+            </div>
+        </div>
+        
+
+        
+        <div class="mt-2">
+            <a href="../../" class="btn btn-info">
+                Volver al inicio
+            </a >
+        </div>
+
+    </div>
+    
+</body>
+</html>

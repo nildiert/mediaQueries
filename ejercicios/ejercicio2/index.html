@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="../../bootstrap-4.2.1-dist/css/bootstrap.css">
+    <title>Document</title>
+    <style>
+
+        /* Estilos de la barra de navegación */
+        .tobnav{
+            overflow: hidden;
+            background-color: #333333;
+        }
+        /* Estilos de los links para la barra de navegación */
+        .tobnav a{
+            float: left;
+            display: block;
+            color: #f2f2f2;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+        }
+
+        /* Cambio de color en el hover */
+        .tobnav a:hover{
+            background-color: #dddddd;
+            color: black;
+        }
+
+        /* Cambio de formato según tamaño */
+
+        @media screen and (max-width: 600px){
+            .tobnav a {
+                float: none;
+                width: 100%;
+
+            }
+        }
+
+
+    </style>
+</head>
+<body>
+    <div class="jumbotron">
+        <h1 class="display-3">Ejemplo 2</h1>
+        <p>Media queries para menús</p> 
+    </div>
+    <div class="container">
+
+        <div class="tobnav">
+            <a href="">link 1</a>
+            <a href="">link 2</a>
+            <a href="">link 3</a>
+        </div>
+
+        <p>Cambio de posición de los elementos del menú al cambiar el tamaño de la página</p>
+
+        
+        <div class="mt-2">
+            <a href="../../" class="btn btn-info">
+                Volver al inicio
+            </a >
+        </div>
+
+    </div>
+    
+</body>
+</html>

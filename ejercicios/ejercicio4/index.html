@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="../../bootstrap-4.2.1-dist/css/bootstrap.css">
+    <title>Document</title>
+    <style>
+        div.ejemplo{
+            background-color: yellow;
+            padding: 20px;
+        }
+
+        @media screen and (max-width: 600px){
+            div.ejemplo{
+                display: none;
+            }
+        }
+
+
+    </style>
+</head>
+<body>
+    <div class="jumbotron">
+        <h1 class="display-3">Ejemplo 4</h1>
+        <p>Ocultar objetos con media queries</p> 
+    </div>
+    <div class="container ">
+        
+        <div class="ejemplo">
+            Ejemplo de DIV
+        </div>
+         
+
+        <p>Cuando el tamaño de la vista es inferior a 600 px, el elemento de arriba se ocultará.</p>
+        
+        <div class="mt-2">
+            <a href="../../" class="btn btn-info">
+                Volver al inicio
+            </a >
+        </div>
+
+    </div>
+    
+</body>
+</html>
